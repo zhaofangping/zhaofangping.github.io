@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			body {
+				background: #0c1248 none repeat center top;
+			}
+			
+			#box {
+				width: 1280px;
+				height: auto;
+				margin: 0 auto;
+			}
+			/*header {
+				width: 100%;
+				height: 78px;
+			}
+			
+			header .img {
+				width: 169px;
+				height: 50px;
+				margin-top: 9px;
+			}
+			
+			header .img img {
+				width: 100%;
+				height: 100%;
+			}*/
+			
+			#top {
+				width: 100%;
+				/*height: 80px;*/
+				line-height: 80px;
+				padding-bottom: 80px;
+			}
+			
+			#top .img {
+				width: 45%;
+				height: 50px;
+				margin-top: 9px;
+				display: inline-block;
+			}
+			
+			#top .img img {
+				width: 169px;
+			}
+			
+			#top .nav-ul {
+				/*overflow: hidden;*/
+				display: inline-block;
+				width: 50%;
+			}
+			
+			#top .nav-ul ul {
+				width: 100%;
+				float: right;
+				height: 80px;
+				display: inline-block;
+				display: flex;
+			}
+			
+			#top .nav-ul ul li {
+				flex: 30%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+				color: #fff;
+			}
+			
+			#top .nav-ul ul li:nth-of-type(2) {
+				border-bottom: 2px solid blue;
+				color: blue;
+			}
+			
+			#top .nav-ul ul li:hover {
+				color: blue;
+				border-bottom: 2px solid blue;
+			}
+			
+			#top .banner {
+				width: 100%;
+				/*padding-top:50px;*/
+				overflow: hidden;
+			}
+			
+			#top .banner-left {
+				width: 426px;
+				display: inline-block;
+				float: left;
+			}
+			
+			#top .banner-right {
+				width: 854px;
+				display: inline-block;
+			}
+			
+			#top .banner-left .title p {
+				font-size: 50px;
+				color: #FFFFFF;
+			}
+			
+			#top .banner-left .title p span {
+				color: #1c8dff;
+				font-weight: bold;
+			}
+			
+			#top .content {
+				width: 426px;
+				padding: 30px 0;
+				font-size: 16px;
+				line-height: 2em;
+				color: #FFFFFF;
+			}
+			
+			#top .banner-footer div {
+				width: 210px;
+				height: 48px;
+				display: inline-block;
+			}
+			
+			#top .banner-footer div:first-child p {
+				background-color: rgb(10, 110, 242);
+			}
+			
+			#top .banner-footer div p {
+				width: 152px;
+				height: 44px;
+				line-height: 44px;
+				border: rgb(28, 141, 255) 2px solid;
+				border-radius: 2em;
+				text-align: center;
+				color: #FFFFFF;
+			}
+			
+			#top .banner-right .img {
+				width: 615px;
+				height: 519px;
+				margin-left: 160px;
+			}
+			
+			#top .banner-right .img img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#center {
+				width: 100%;
+			}
+			
+			#cen-top {
+				width: 100%;
+				height: auto;
+				text-align: center;
+			}
+			
+			#cen-top h3 {
+				width: 100%;
+				height: 68px;
+				font-size: 40px;
+				font-weight: bold;
+				font-style: normal;
+				color: #ffffff;
+				text-align: center;
+				padding: 0 0 15px 0;
+				'
+
+			}
+			
+			#cen-top .content {
+				height: 68px;
+				width: 600px;
+				font-family: 微软雅黑;
+				font-size: 14px;
+				font-weight: normal;
+				font-style: normal;
+				color: #ffffff;
+				text-align: center;
+				display: inline-block;
+			}
+			
+			#center #cen-bt {
+				width: 100%;
+				height: 215px;
+				margin-bottom: 205px;
+			}
+			
+			#center #cen-bt .div_list {
+				/*flex: 1;*/
+				background-color: rgb(16, 42, 99);
+				width: 390px;
+				height: 198px;
+				float: left;
+				margin-right: 20px;
+				border-radius: 8px;
+				padding-top: 50px;
+				text-align: center;
+				border: 1px solid #000;
+				position: relative;
+			}
+			/*#center .cen-bt .list_i .list_img{
+				width:
+			}*/
+			
+			#center #cen-bt .div_list p {
+				width: 100%;
+				text-align: center;
+				padding: 0 0 15px;
+				font-size: 20px;
+				font-weight: bold;
+				font-style: normal;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				color: #f9f9f9;
+				vertical-align: bottom;
+				position: absolute;
+				bottom: 20px;
+				left: 0;
+			}
+			
+			#money_con {
+				width: 100%;
+				overflow: hidden;
+				margin-bottom: 200px;
+			}
+			
+			#money_con #money_left {
+				width: 590px;
+				height: 427px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 60px 0px 0px 0px;
+				float: left;
+				background: rgb(19,55,115);
+			}
+			
+			#money_con #money_left h2 {
+				text-align: center;
+				font-family: f86570e09f7ebb4debe619f726ef491d6;
+				font-size: 34px;
+				font-weight: bold;
+				font-style: normal;
+				color: #ffffff;
+				display: block;
+				vertical-align: bottom;
+				margin-bottom: 18px;
+			}
+			#money_con #money_left #progress{
+				    font-size: 16px;
+				    font-weight: normal;
+				    font-style: normal;
+				    color: #bcd8fd;
+				    display: block;
+				    padding: 2px;
+				    vertical-align: bottom;
+				    	margin-bottom: 25px;
+				    	text-align: center;
+			}
+			#money_con #money_left #tiao{
+				width:100px;
+				height: 2px;
+				background: rgb(255,255,255);
+				margin:0 auto;
+			margin-bottom: 40px;
+			}
+			#money_con #money_left #time{
+				font-size: 28px;
+				color: #fff;
+				padding-top:10px 0;
+				text-align: center;
+			}
+			#money_con #money_left #time span{
+				font-size: 40px;
+			}
+			#money_con #money_left #jindu{
+				padding-top:50px;
+				text-align: center;
+			}
+			#money_con #money_left .xiaojindu{
+				border-radius: 15px;
+				width:470px;
+				height:33px;
+				background: #fff;
+				margin:0 auto;
+				padding-top: 3px;
+				padding-left: 4px;
+			}
+			#money_con #money_left .xiaojindu span{
+				/*background: rgb(7,104,238);*/
+				/*padding:8px 80px 8px 0px ;*/
+				border-radius: 15px;
+				display: block;
+				height:30px;
+				width:370px;
+				background:blue;
+				font-size-adjust: 20px;
+				color:#fff;
+				line-height:30px;
+				/*margin-top: 5px;*/
+			}
+			#money_con #money_left #lianxi {
+				padding-top: 40px;
+			}
+				#money_con #money_left #lianxi span{
+					width: 152px;
+					height: 44px;
+					background: rgb(10,110,242);
+					border-radius: 22px;
+					color:#fff;
+					display: block;
+					margin:0 auto;
+					line-height: 44px;
+					text-align: center;
+				}
+			#money_con #money_right {
+				width: 590px;
+				height: 507px;
+				float: right;
+			}
+			#money_con #money_right h3{
+				 padding: 62px 0px 6px;
+				 color: rgb(225,225,225);
+			}
+			#money_con #money_right #ri-text{
+				 color: rgb(221,212,222);
+				 line-height: 30px;
+				 font-size: 14px;
+				 margin-bottom: 30px;
+			}
+			#money_con #money_right #ri-list{
+				line-height: 45px;
+				color:#fff;
+			}
+			#money_con #money_right #ri-list span{
+				margin-right: 22px;
+				color:rgb(10,105,232);
+			}
+			.servese-tp h3{
+				    font-family: f44a96a114129fea58caf6c23604447b5;
+				    font-size: 40px;
+				    font-weight: bold;
+				    font-style: normal;
+				    color: #ffffff;
+				    padding: 0 0 15px 0;
+				    display: block;
+				    padding: 0 0 15px 0;
+				    vertical-align: bottom;
+				    text-align: center;
+			}
+			.servese-tp .content {
+				width: 600px;
+				margin: 0 auto;
+				font-family: 微软雅黑;
+			    font-size: 14px;
+			    font-weight: normal;
+			    font-style: normal;
+			    color: #ffffff;
+			    display: block;
+			    vertical-align: bottom;
+			    text-align: center;
+			    line-height: 30px;
+			    margin:0 auto;
+			}
+			.servese_img{
+				padding-top: 60px;
+			}
+			
+			#servese_v{
+			margin-bottom:180px;
+		}
+			#servese_v .servese_clo .servese_img .servese_bottom{
+				overflow: hidden;
+				height:430px;
+				padding-bottom:80px;
+			}
+		#servese_v .servese_clo .servese_img .servese_bottom .left{
+				float:left;
+				width:570px;
+				height:450px;
+				background: rgb(17,46,104);
+				border-radius:8px ;
+				padding:38px 10px 0px 38px;
+				box-sizing: border-box;
+			}
+			#servese_v .servese_clo .servese_img .servese_bottom 	.right{
+				float:right;
+				width:570px;
+				height:450px;
+				background: rgb(17,46,104);
+				border-radius:8px ;
+		padding:38px 10px 0px 38px;
+				box-sizing: border-box;
+			}
+			#servese_v .servese_clo .servese_img .servese_bottom .item {
+				overflow: hidden;
+			padding: 5px 0;
+			}
+			#servese_v .servese_clo .servese_img .servese_bottom .item .img{
+				width: 20px;
+				height: 20px;
+			float: left;
+			}
+			#servese_v .servese_clo .servese_img .servese_bottom .item .img img{
+				width: 100%;
+			}
+#servese_v .servese_clo .servese_img .servese_bottom .item p{
+	text-indent: 1em;
+	line-height: 25px;
+	font-size: 14px;
+    color: rgb(188, 216, 253);
+}
+#servese_v .servese_clo .servese_img .servese_bottom h3{
+	padding: 20px 0 0;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+#servese_v .servese_clo .servese_img .servese_bottom .ul{
+	padding: 20px 0;
+}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<nav_v :x_nav_a="list">
+				<div slot="no1" class="img"><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmMwMWZiNzVjMmNlMjZlZGU4YmEwNWNlNzBhMzA1N2YucG5n.png" alt="" /></div>
+			</nav_v>
+			
+			<use_v x_title="使用流程" x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。">
+				<div slot="no2" class="div_list">
+					<div class="list_i">
+						<div class="list_img">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy85Y2VmNzcxOGEzZTNiNTBlYzA2YWUzNjYxMzZjMjYxNi5wbmc_p_p100_p_3D.png" alt="" />
+						</div>
+						<p>安全保障</p>
+					</div>
+				</div>
+				<div slot="no3" class="div_list">
+					<div class="list_i">
+						<div class="list_img">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yNGQ5ZmE0MzI4ZGI1NjEwZTQwODkyZmJhZjQxYTNlNS5wbmc_p_p100_p_3D.png" alt="" />
+						</div>
+						<p>绑定付款</p>
+					</div>
+				</div>
+				<div slot="no4" class="div_list">
+					<div class="list_i">
+						<div class="list_img">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy80ODVmOTZhYTgyYWEzN2E4ODNhYzcxZWMwODEwMDlhZC5wbmc_p_p100_p_3D.png" alt="" />
+						</div>
+						<p>创建账户</p>
+					</div>
+				</div>
+			</use_v>
+			<money_v></money_v>
+			
+			<servese_v x_title="全球服务" x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" >
+				<div slot="no5">
+					<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjE4N2VmMjZiNjA3YmZmZTA0NTM4MjEzYjQ2MTJkYmMuanBn.jpg" alt="" />
+				</div>
+				
+			</servese_v>
+			<servese_v x_title="关于我们" x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" >
+				<div slot="no5" class="servese_bottom">
+					<div class="left">
+						<div class="img">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNjJjMzNhYTUyN2NjMTIyMTFkNmM0ZjI3ZWE4YTkyZDQtZTE1NjM5NTAwMTc0MzgucG5n.png" alt="" />
+						</div>
+						<h3>税收居民身份须知！</h3>
+						<div class="ul">
+							<div class="item">
+								<div class="img">
+									<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+								</div>
+								<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</p>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+								</div>
+								<p>当今最领先的响应式自助建站平台</p>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+								</div>
+								<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</p>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+							<div class="img">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNjJjMzNhYTUyN2NjMTIyMTFkNmM0ZjI3ZWE4YTkyZDQtZTE1NjM5NTAwMTc0MzgucG5n.png" alt="" />
+						</div>
+						<h3>税收居民身份须知！</h3>
+						<div class="ul">
+							<div class="item">
+								<div class="img">
+									<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+								</div>
+								<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</p>
+							</div>
+							
+							<div class="item" >
+								<div class="img">
+									<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+								</div>
+								<p>当今最领先的响应式自助建站平台</p>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+								</div>
+								<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</servese_v>
+		</div>
+		<template id="nav_v">
+			<div id="top">
+				<div>
+					<slot name="no1"></slot>
+					<div class="nav-ul">
+						<ul>
+							<li v-for="i in a">{{i}}</li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner">
+					<div class="banner-left">
+						<div class="title">
+							<p>践行惠普金融</p>
+							<p>助力<span>美好生活</span></p>
+						</div>
+						<div class="content">
+							<div class="con-text">我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</div>
+						</div>
+						<div class="banner-footer">
+							<div>
+								<p>联系我们→</p>
+							</div>
+							<div>
+								<p>点我资讯→</p>
+							</div>
+						</div>
+					</div>
+					<div class="banner-right">
+						<div class="img">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZDUyMmVkNmVhNmIzYjZhYTBiZWM0YzdhMGQyNzE3Mi5wbmc_p_p100_p_3D.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</template>
+		<template id="use_v">
+			<div id="center">
+				<div id="cen-top">
+					<h3>{{title}}</h3>
+					<div class="content">{{content}}</div>
+				</div>
+				<div id="cen-bt">
+					<slot name="no2">
+					</slot>
+					<slot name="no3"></slot>
+					<slot name="no4"></slot>
+				</div>
+			</div>
+		</template>
+		<template id="money_v">
+			<div id='money_con'>
+				<div id="money_left">
+					<h2>近期货币</h2>
+					<div id="progress">购买进度</div>
+					<div id="tiao"></div>
+					<div id="time"><span>0</span><span>0</span>天<span>1</span><span>6</span>时<span>1</span><span>9</span>分钟<span>4</span><span>8</span>秒</div>
+					<div id="jindu">
+						<div class="xiaojindu"><span>购买进度80%</span></div>
+					</div>
+					<div id="lianxi"><span>联系我们 →</span></div>
+				</div>
+				<div id="money_right">
+						<h3>最值得信赖的平台</h3>
+						<div id="ri-text">
+							移动互联网的稳定快速发展带动了货币行业的迅速崛起，在如此庞大的货币海洋中，哪些是您所需要的货币呢？
+						</div>
+						<div id="ri-list">
+							<p><span>√</span>享受专属优惠券</p>
+							<p><span>√</span>用于商城消费 先用后付</p>
+							<p><span>√</span>随心付，3/6/9/12期随心付
+</p>
+						</div>
+				</div>
+			</div>
+		</template>
+		<template id="servese_v">
+			<div id="servese_v">
+				<div class="servese-tp">
+					<h3>{{title}}</h3>
+					<div class="content">{{content}}</div>
+			    </div>
+			<div class="servese_clo">
+				<div class="servese_img">
+					<slot name="no5"></slot>
+				</div>
+			</div>
+			</div>
+			
+		</template>
+	</body>
+
+</html>
+<script src="vue.js"></script>
+<script>
+	//top nav banner
+	Vue.component("nav_v", {
+		template: '#nav_v',
+		props: ['x_nav_a'],
+		data() {
+			return {
+				a: this.x_nav_a,
+				//				title:this.x_title,
+				//				content:this.x_content
+			}
+		},
+		mounted() {
+			//			console.log(this.a)
+		}
+	})
+	//使用流程
+	Vue.component("use_v", {
+		template: '#use_v',
+		props: ['x_title', 'x_content'],
+		data() {
+			return {
+				title: this.x_title,
+				content: this.x_content
+			}
+		},
+		mounted() {
+			console.log(this.x_content)
+		}
+	})
+	//近期货币
+	Vue.component('money_v', {
+		template: '#money_v',
+		data() {
+			return {
+
+			}
+		}
+	})
+	//全球服务、
+	Vue.component('servese_v', {
+		template: '#servese_v',
+		props: ['x_title', 'x_content'],
+		data() {
+			return {
+				title: this.x_title,
+				content: this.x_content
+			}
+		}
+	})
+	new Vue({
+		el: "#box",
+		data: {
+			list: ['首页', '使用流程', '全球服务', '关于我们', '专家团队', '联系我们'],
+		},
+		methods: {
+
+		}
+	})
+</script>
