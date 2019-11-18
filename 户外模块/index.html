@@ -1,0 +1,1188 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>户外旅行</title>
+		<link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css" />
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			.clearfix:after {
+				content: ".";
+				clear: both;
+				height: 0;
+				overflow: hidden;
+				visibility: hidden;
+				display: block;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			#box {
+				width: 100%;
+				height: auto;
+				position: relative;
+			}
+			
+			#nav {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				z-index: 5;
+			}
+			
+			#nav .cont {
+				width: 1280px;
+				margin: 0 auto;
+			}
+			
+			#container,#gy_container {
+				width: 100%;
+				background: url(bj.jpg) no-repeat;
+				background-size: 100%;
+				padding-top: 180px;
+			}
+			
+			#container .cont {
+				width: 1280px;
+				padding: 0 40px;
+				margin: 0 auto;
+			}
+			
+			#nav .logo {
+				padding: 10px 0;
+			}
+			
+			#nav .logo .item {
+				width: 195px;
+				height: 50px;
+				float: left;
+			}
+			
+			#nav .logo .item img {
+				width: 100%;
+			}
+			
+			#nav .logo .list {
+				width: 800px;
+				padding: 5px 0;
+				float: left;
+				text-align: right;
+			}
+			
+			#nav .logo .img {
+				width: 370px;
+				float: left;
+			}
+			
+			#nav .logo .list ul {
+				display: inline-block;
+			}
+			
+			#nav .logo .list ul li {
+				float: left;
+				padding: 12px 20px;
+				margin: 0 7px;
+				color: #ddedf5;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			
+			#nav .logo .last {
+				width: 56px;
+				float: left;
+				text-align: right;
+				padding: 18px 0;
+			}
+			#container #baner .bander-top{
+				min-height: 280px;
+				display: flex;
+			}
+			#container #baner .bander-top .txt{
+				flex: 5;
+				font-family: 微軟正黑體;
+				font-size: 70px;
+				font-weight: bold;
+				font-style: normal;
+				color: #ffffff;
+			}
+			#gy_container{
+				background: url(3.jpg) no-repeat;
+				background-size:100%;
+			}
+			#container #baner .bander-top .data{
+				flex: 5;
+			}
+			#container #baner .bander-top .data .item{
+				padding-top:35px ;
+			}
+			#container #baner .bander-top .data .item span{
+				font-size: 16px;
+				color: #FFFFFF;
+			}
+			#container #baner .bander-top .data .item p{
+				font-size: 26px;
+				color: #FFFFFF;
+			}
+			#container #baner .bander-bottom{
+
+				padding-top:44px ;
+			}
+			#container #baner .bander-bottom .left{
+				width: 50%;
+				float: left;
+				padding-top: 80px;
+			}
+			#container #baner .bander-bottom .left ul li{
+				font-size: 16px;
+				color: #FFFFFF;
+				line-height: 35px;
+			}	
+			#container #baner .bander-bottom .clo{
+				padding: 30px 0 25px 0;
+			}
+			#container #baner .bander-bottom .clo .item1{
+				font-size: 16px;
+				color: #FFFFFF;
+				vertical-align: middle;
+				padding-right: 5px;
+			}
+			#container #baner .bander-bottom .clo .item2{
+				display: inline-block;
+				width: 20px;
+				height: 5px;
+				background: blue;
+				border-radius: 2px;
+			}
+			#container #baner .bander-bottom .right{
+				width: 50%;
+				float: left;
+				position: relative;
+			}
+			#container #baner .bander-bottom .right .item{
+				width: 700px;
+				margin: 0 auto;
+				
+			}
+			#container #baner .bander-bottom .right .swiper-button-prev{
+				position: absolute;
+				left: -35px;
+				background: none;
+				font-size: 36px;
+				color: #379cf4;
+
+			}
+			#container #baner .bander-bottom .right .swiper-container{
+				height: 210px;
+			}
+			#container #baner .bander-bottom .right .swiper-button-next{
+				position: absolute;
+				right: -35px;
+				background: none;
+				font-size: 36px;
+				color: #379cf4;
+			}
+			#container #baner .bander-bottom .right img{
+				width: 100%;
+				height: 100%;
+			}
+			#cont{
+				padding-top:100px ;
+			}
+			#cont .content{
+				width: 1330px;
+				height: auto;
+				margin: 0 auto;
+			}
+			#cont .content .left{
+				width: 60%;
+				float: left;
+			}
+			#cont .content .left .swiper-slide{
+				width:340px !important ;
+				padding: 25px;
+			}
+			#cont .content .left .swiper-slide .img img{
+				width: 100%;
+			}
+			#cont .content .left .swiper-slide .h3{
+				padding: 45px 0 4px;
+			}
+			#cont .content .left .swiper-slide .h3 h3{
+				color: #13304A;
+				font-size: 20px;
+			}
+			#cont .content .left .swiper-slide .cq p{
+				color: #379cf4;
+			    font-size: 14px;
+			    font-family: verdana;
+			    padding: 10px 0px 0px 0px;	
+			}
+			#cont .content .left .swiper-slide .cont{
+				color: #596e80;
+			    font-size: 12px;
+			    max-width: px;
+			    word-break: break-all;
+			    font-family: 微软雅黑;
+			    line-height: 28px;
+			    padding-top: 25px;
+			}
+			#cont .content{
+				position: relative;
+			}    
+			#cont .content .right{
+				width: 36%;
+				float: left;
+				padding: 25px;
+			}
+			#cont .content .right .h2 h2{
+				    font-family: Oswald;
+				    font-size: 36px;
+				    font-weight: bold;
+				    font-style: normal;
+				    color: #13304a;
+			}
+			#cont .content .right .name{
+					padding-top:8px ;
+					padding-left: 2px;
+			}
+			#cont .content .right .name .item1{
+					font-size: 14px;
+				    font-weight: normal;
+				    font-style: normal;
+				    color: #596e80;
+				    vertical-align: middle;
+				    padding-right: 7px;
+			}
+			#cont .content .right .name .item2{
+				display: inline-block;
+			    width: 20px;
+			    height: 5px;
+			    background: blue;
+			    border-radius: 2px;
+			}
+			#cont .content .right .cont{
+				font-size: 13px;
+			
+				padding-top: 40px;
+				line-height: 26px;
+				color: #13304A;
+			}
+			#cont .content .right .cont p{
+					width: 308px;
+			}
+			#cont .content .swiper-button-prev{
+				position: absolute;
+				top:82%;
+				left: 64%;
+				background-image: none;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				font-size: 26px;
+				color: #FFFFFF;
+				background-color:rgb(231,243,251) ;
+			}
+			#cont .content .swiper-button-next{
+				position: absolute;
+				top:82%;
+				right: 30%;
+				background-image: none;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				font-size: 26px;
+				color: #FFFFFF;
+				background-color:rgb(115,185,247) ;
+			}
+			#foot{
+				background: rgb(19,48,74);
+			}
+			#foot .foot_clo{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			#foot .top{
+				padding-top: 90px;
+   				padding-bottom: 70px;
+				display: flex;
+			}
+			#foot .top .left{
+				flex: 3;
+			}
+			#foot .top .left .h2{
+				font-size: 30px;
+				color: #FFFFFF;
+			}
+			#foot .top .left .content{
+				padding: 30px 0 0;
+			}
+			#foot .top .left .content p{
+				width: 320px;
+				color: #CCDAE1;
+				font-size: 12px;
+				line-height: 26px;
+			}
+			#foot .top .center{
+				flex: 4;
+			}
+			#foot .top .right{
+				flex: 3;
+			}
+			#foot .center .h2{
+				font-size: 30px;
+				color: #FFFFFF;
+			}
+			#foot .center ul{
+				padding: 30px 0 0;
+			}
+			#foot .center ul li i{
+				display: inline-block;
+				width: 15px;
+				border: 1px solid #379cf4;
+				position: relative;
+				top: -4px;
+				margin-right: 8px;
+			}
+			#foot .center ul li{
+				color: #CCDAE1;
+				font-size: 12px;
+				line-height: 26px;
+				padding-left: 22px;
+				}
+			#foot .right .item1 span{
+				width: 64px;
+				height: 64px;
+				display: inline-block;
+				background-image: url(//fast.qifeiye.com/FeiEditor/images/icon/social_icon_64x64.png);
+   				background-repeat: no-repeat;
+			}
+			#foot .right .item1 span:nth-of-type(1){
+   				background-position: -320px 0;
+			}
+			#foot .right .item1 span:nth-of-type(2){
+   				    background-position: -384px 0
+			}
+			#foot .right .item1 span:nth-of-type(3){
+   				       background-position: -64px 0;
+			}
+			#foot .right .item2{
+				padding: 30px 0 0; 
+			}
+			#foot .right .item2 p{
+				line-height: 28px;
+				color: #CCDAE1;
+				font-size: 12px;
+				letter-spacing: inherit;
+			}
+			#foot .bottom{
+				border-top: 1px solid #CCCCCC;
+			}
+			#foot .clo{
+				width: 1200px;
+				margin: 0 auto;
+				height: auto;
+			}
+			#foot .clo .item{
+				height: 55.6px;
+				line-height: 55.6px;
+			}
+			#foot .clo .item p{
+				text-align: center;
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			#gy_container{
+				background-size:100% 110%;
+				padding-bottom:200px;
+			}
+			#gy_container #gy_baner .title{
+				width: 100%;
+				padding-bottom: 30px;
+			}
+			#gy_container #gy_baner .title div{
+				text-align: center;
+				font-size: 44px;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			#gy_container #gy_baner .name span{
+				vertical-align: middle;
+				width: 300px;
+				display: inline-block;
+			    border-bottom-style: solid;
+			    border-bottom-width: 2px;
+			    border-bottom-color: #379cf4;
+			    margin-right: 20px;
+			}
+			#gy_container #gy_baner .name{
+				text-align: center;
+			}
+			#gy_container #gy_baner .name div{
+				display: inline-block;
+				font-family: 微软雅黑;
+			    font-size: 16px;
+			    font-weight: normal;
+			    font-style: normal;
+			    color: #ffffff;
+			}
+			/* 关于中心部分*/
+			#gy_cont{
+				padding-top: 100px;
+    			padding-bottom: 100px;
+			}
+			#gy_cont .layer_one{
+				width: 1280px;
+				margin: 0 auto;
+				display:flex;
+			}
+			#gy_cont .layer_one .commonality{
+				flex: 1;
+				padding-right: 70px
+			}
+			#gy_cont .layer_one .left span,#gy_cont .layer_one .center span{
+				line-height: 30px;
+				letter-spacing: 1px;
+				font-size: 12px;
+				font-family: 微软雅黑;
+   				color: rgb(89, 110, 128);
+			}
+			#gy_cont .swiper-container {
+				width: 335px;
+				height: 180px;
+			}
+			#gy_cont .swiper-container img{
+				width: 100%;
+			}
+			#gy_cont .tour{
+				padding: 100px 0 0 ;
+			}
+			#gy_cont .tour #gy_baner .title{
+				width: 100%;
+				padding-bottom: 30px;
+			}
+			#gy_cont .tour #gy_baner .title div{
+				text-align: center;
+				font-size: 36px;
+				  color: #13304a;
+				text-align: center;
+				font-weight: bold;
+			}
+			#gy_cont .tour #gy_baner .name span{
+				width: 28px;
+				vertical-align: middle;
+				display: inline-block;
+			    border-bottom-style: solid;
+			    border-bottom-width: 2px;
+			    border-bottom-color: #379cf4;
+			}
+			#gy_cont .tour #gy_baner .name{
+				text-align: center;
+			}
+			#gy_cont .tour #gy_baner .name div{
+				display: inline-block;
+ 		  		font-size: 14px;
+			    font-weight: normal;
+			    font-style: normal;
+			    color: #596e80;
+			    padding: 0 15px;
+			}
+			#gy_cont .tour .item_container .item{
+				width: 1190px;
+				margin: 0  auto;
+			}
+			#gy_cont .tour .item_container .item .item_block{
+				padding: 45px;
+				float: left;
+				position: relative;
+			}
+			#gy_cont .tour .item_container .item .item_block img{
+				width: 100%;
+			}
+			#gy_cont .tour .item_container .item .item_clo{
+				float: left;
+				width: 200px;
+				height: 250px;
+				background: red;
+				position: absolute;
+				top: 0;
+				opacity: 0;
+			}
+			#lx_cont{
+				padding-top: 90px;
+    			padding-bottom: 180px;
+    			background-color: #f3faff;
+			}
+			#lx_cont .container{
+				     max-width: 1320px; 
+   				 margin: 0 auto;
+			}
+			#lx_cont .container .row{
+				    padding: 0 40px;
+			}
+			#lx_cont .container .row ul li{
+				max-width: 29.27%;
+				margin-bottom: 5px;
+				padding-bottom: 5px;
+				padding: 25px;
+				float: left;
+			}
+			#lx_cont .container .row ul li .img img{
+				width: 100%;
+			}
+			#lx_cont .container .row ul li  .content{
+				padding-top: 10px;
+				background: #FFFFFF;
+			}
+			#lx_cont .container .row ul li  .content .titile {
+				padding: 25px 20px 0;
+			}
+			#lx_cont .container .row ul li  .content .titile h3{
+				color: #13304a;
+			    font-size: 20px;
+			    font-family: 微软雅黑;
+			    line-height: 26px;
+			}
+			#lx_cont .container .row ul li .xq{
+				color: #379cf4;
+			    font-size: 14px;
+			    font-family: verdana;
+			    padding: 6px 20px 5px 20px;
+			}
+			#lx_cont .container .row ul li .cont{
+				color: #596e80;
+			    font-size: 12px;
+			    font-family: 微软雅黑;
+			    line-height: 26px;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    padding-left: 20px;
+			    padding-right: 20px;
+			}
+			#relation_cont{
+				width: 100%;
+				background: reb(255,255,255);
+			}
+			#relation_cont .item{
+				width: 1159px;
+				height: 340px;
+				margin: 20px auto;
+				padding: 20px;
+			}
+			#gyy_cont{
+				padding: 20px 0;
+			}
+			#gyy_cont .content{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			#gyy_cont .content .title h2{
+				text-align: center;
+				font-size: 45px;
+			}
+			#gyy_cont .content .img{
+				width: 800px;
+				margin: 0 auto;
+				height: 600px;
+			}
+			#gyy_cont .content .img img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="nav">
+				<div class="cont">
+					<div class="logo clearfix">
+						<div class="img clearfix">
+							<div class="item"><img src="1.png"></div>
+						</div>
+						<div class="list">
+							<ul class="clearfix">
+								<router-link to="/" tag="li">首页</router-link>
+								<router-link to="/gy" tag="li">关于</router-link>
+								<router-link to="/lx" tag="li">路线</router-link>
+								<router-link to="/gl" tag="li">攻略</router-link>
+								<router-link to="/relation" tag="li">联系</router-link>
+							</ul>
+						</div>
+						<div class="last">
+							<img src="2.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<keep-alive>
+				<router-view name="head"></router-view>
+			</keep-alive>
+			<keep-alive>
+				<router-view name="cont"></router-view>	
+			</keep-alive>
+			<keep-alive>
+				<router-view name="foot"></router-view>
+			</keep-alive>
+		</div>
+		<!--  头部  -->
+		<template id="head">
+			<div id="container">
+				<div id="baner">
+					<div class="cont">
+						<div id="z_head">
+							<div class="bander-top">
+								<div class="txt">
+									<span id="z_nna"></span>
+								</div>
+								<div class="data">
+									<div class="item">
+										<span>海拔</span>
+										<myclo vnum="1650" vsymbol="m"></myclo>
+									</div>
+									<div class="item">
+										<span>路线</span>
+										<myclo vnum="7" vsymbol=""></myclo>
+									</div>
+									<div class="item">
+										<span>游客/年</span>
+										<myclo vnum="3000" vsymbol="+"></myclo>
+									</div>
+								</div>
+							</div>
+							<div class="bander-bottom clearfix">
+								<div class="left">
+									<ul>
+										<li>背着背包的路上，听过许多故事，见过旅行风景。</li>
+										<li>流转的时光，都成为命途中的点缀，</li>
+										<li>不言不语都是好风景。</li>
+									</ul>
+									<div class="clo">
+										<span class="item1">CUSTOM</span>
+										<span class="item2"></span>
+									</div>
+								</div>
+								<div class="right">
+									<div class="swiper-container swiper-container_z">
+									    <div class="swiper-wrapper">
+											<div class="swiper-slide" v-for="i in o">
+												<img :src="i.name">
+											</div>
+									    </div>
+										<!-- 分页器-->
+							    		<!--<div class="swiper-pagination"></div>-->
+							   			<!--  小点导航-->
+									</div>
+									<div class="swiper-button-prev"><</div>
+									<div class="swiper-button-next">></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<!-- 首页中心-->
+		<template id="cont">
+			<div id="cont">
+				<div class="content clearfix">
+					<div class="left">
+						<div class="swiper-container swiper2">
+						    <div class="swiper-wrapper">
+								<div class="swiper-slide" v-for="i in o">
+									<div class="img"><img :src="i.name"></div>
+									<div class="h3"><h3>{{i.title}}</h3></div>
+									<div class="cq"><p>{{i.xq}}</p></div>
+									<div class="cont"><p>{{i.cont}}</p></div>
+								</div>
+						 	 </div>
+							<!-- 分页器-->
+				    		<!--<div class="swiper-pagination"></div>-->
+				   			<!--  小点导航-->
+						</div>
+						<div class="swiper-button-prev"><</div>
+						<div class="swiper-button-next">></div>
+					</div>
+					<div class="right">
+						<div class="h2"><h2>RECOMM</h2></div>
+						<div class="name">
+							<span class="item1">精选当季热门目的地</span>
+							<span class="item2"></span>
+						</div>
+						<div class="cont">
+							<p>
+								偶尔为街头独特的风景驻足，偶尔因高山流水的美丽停留，偶尔被惊鸿一瞥的美丽吸引；或者在春暖花开时，或者在河边放下一盏写着心愿的河灯，祝愿一切安好。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<!--  首页尾部-->
+		<template id="foot">
+			<div id="foot">
+				<div class="foot_clo">
+					<section>
+						<div class="top">
+							<div class="left">
+								<div class="h2"><h2>TRAVEL</h2></div>
+								<div class="content	"><p>我公司会以安全、快乐、环保为理念，以敬业、诚信、善良为本，期待与全国各地的户外公司、户外俱乐部、旅行社进行合作。</p></div>
+							</div>
+							<div class="center">
+								<div class="h2"><h2>CONTACT</h2></div>
+								<ul>
+									<li><i></i>深圳市南京路双港码头6楼</li>
+									<li><i></i>123@admin.com</li>
+									<li><i></i>011-555-12345</li>
+								</ul>
+							</div>
+							<div class="right">
+								<div class="item1">
+									<span></span><span></span><span></span><span></span>
+								</div>
+								<div class="item2">
+									<p>强大专业的户外产品汇集平台，为您提供徒步、登山、露营、摄影、航海、越野等多种方式探索大自然。</p>
+								</div>
+							</div>
+						</div>	
+					</section>
+				</div>
+				<section>
+						<div class="bottom">
+							<div class="clo">
+								<div class="item">
+									<p>Copyright  © 2019  户外探险模板  All rights reserved</p>
+								</div>
+							</div>
+						</div>	
+					</section>
+			</div>
+		</template>
+		<!--  关于---导航-->
+		<template id="gy_head">
+			<div id="gy_container">
+				<div id="gy_baner">
+					<div class="title">
+						<div>{{title}}</div>
+					</div>
+					<div class="name">
+						<div class="cont">
+							<span></span>
+							<div>背上行囊去远方，那个梦寐以求的目的地。</div>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template id="gy_cont">
+			<div id="gy_cont">
+				<div class="layer_one">
+					<div class="left commonality ">
+						<span>
+							当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户， 还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。
+						</span>
+					</div>
+					<div class="center commonality ">
+						<span>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可完成自己的网站，起飞页用户的最短建站时间纪录为30分钟。起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…</span>
+					</div>
+					<div class="right commonality ">
+						<div class="swiper-container swiper3">
+						    <div class="swiper-wrapper">
+								<div class="swiper-slide" v-for="i in o">
+									<img :src="i.name">
+								</div>
+						   </div>
+						</div>
+					</div>
+				</div>
+				<div class="tour">
+					<div id="gy_baner">
+						<div class="title">
+							<div>TOUR GUIDE</div>
+						</div>
+						<div class="name">
+							<div class="cont">
+								<span></span>
+								<div>旅行顾问推荐最好玩儿的地方</div>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="item_container">
+						<div class="item clearfix">
+							<div class="item_block" v-for="i in  img">
+								<div><img :src="i.name"></div>
+								<div class="item_clo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<!-- 路线---主体-->
+		<template id="lx_cont">
+			<section>
+			<div id="lx_cont">
+				<div class="container">
+					<div class="row">
+						<ul class="clearfix">
+							<router-link tag="li" v-for="i in o":to="{name:'products',params:{title:i.title,cont:i.cont,name:i.name}}">
+							<!--<router-link v-for="i in o" tag="li" to="/products">-->
+								<div class="img"><img :src="i.name"></div>
+								<div class="content">
+									<div class="titile"><h3>{{i.title}}</h3></div>
+									<div class="xq"><p>{{i.xq}}</p></div>
+									<div class="cont"><P>{{i.cont}}</P></div>
+								</div>
+							</router-link>
+						</ul>
+					</div>
+				</div>	
+			</div>
+			</section>
+		</template>
+		<!-- 路线 --跳转products  主体内容-->
+		<template id="products">
+			<div>
+				<p>详情:{{cont}}</p>
+				<img :src="name">
+			</div>
+		</template>
+		<!-- 联系组件 跳转到 地图那边-->
+		<template id="relation_cont">
+			<div id="relation_cont">
+				<div class="map">
+					<div class="item">
+						<iframe src="map.html" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"marginwidth="0"></iframe>	
+					</div>
+					<div class="item">
+						<iframe src="https://map.baidu.com/@12959238.56,4825347.47,12z" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"marginwidth="0"></iframe>	
+					</div>
+				</div>
+			</div>
+		</template>
+		<!--  首页时间-->
+		<template id="myclo">
+			<p>{{c}}<span>{{b}}</span></p>
+		</template>
+		<!-- 攻略 中心-->
+		<template id="gyy_cont">
+			<div id="gyy_cont">
+				<div class="content">
+
+				</div>				
+			</div>
+		</template>
+	</body>
+</html>
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+<script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="anime.min.js"></script>
+<script>
+	
+	window.onload=function(){
+		var num=-1
+		var arr=['探','索','</br>','山','野','秘','境','</br>','发','现','纯','粹','自','我']
+		console.log(z_nna)
+		var timer=setInterval(()=>{
+			num++
+			document.getElementById('z_nna').innerHTML+=arr[num]
+			if(num==arr.length-1){
+				clearTimeout(timer)
+			}
+		},80)
+	}
+
+	Vue.component('myclo',{
+		template:"#myclo",
+		props:['vnum','vsymbol'],
+		data(){
+			return{
+				a:this.vnum,
+				b:this.vsymbol,
+				c:0,
+			}
+		},
+		mounted(){
+				var battery = {
+				  charged:0 ,
+				}
+				anime({
+				  targets: battery,
+				  charged: this.a,
+				  myclo:50,
+				  easing: 'linear',
+				  update: ()=> {
+					this.c=parseInt(battery.charged)
+				  },  
+				});
+		}
+	})
+	var router = new VueRouter({
+		routes: [{
+				path: '/',
+				components: {
+					head: {
+						template: '#head',
+						data(){
+							return{
+								o:[
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg'}
+								],
+							}
+						}
+					},
+					cont: {
+						template: '#cont',
+						data(){
+							return{
+								o:[
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'梵净山',xq:'Distance:4.3km　　Days:4',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'格凸河',xq:'Distance:3.5km　　Days:2',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYTMxY2EwYjEyY2ZhYTY0YTA3ZDZhNjVjMGIzYjc4NGYtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'玉龙沙湖',xq:'Distance:3.8km　　Days:2',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'乌兰布统草原',xq:'Distance:10.5km　　Days:8',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'青龙湖',xq:'Distance:6.5km　　Days:5',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让...'},
+								],
+							}
+						}
+					},
+					foot: {
+						template: '#foot',
+					},
+				},
+			},
+			{
+				path: '/gy',
+				components: {
+					head: {
+						template: '#gy_head',
+						data(){
+							return{
+								title:'ABOUT US'
+							}
+						}
+					},
+					cont:{
+						template:'#gy_cont',
+						data(){
+							return{
+								o:[
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg'}
+								],
+								img:[
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgxOTkyZmMxZjMxNjY1YmM2YjFhMzExNzBlNGVlNTgtMjAweDIwMC5qcGc_p_p100_p_3D.jpg'},
+									{name:"https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZmZiYzdlMDFhZGFjZjRhNWVmZWFlMTQ5N2Y2MGYyM2UtMjAweDIwMC5qcGc_p_p100_p_3D.jpg"},
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvM2Q2OWEyYjFlZWJjNWIxYjIxZWRiZTQ2ZGU1Mzg0ODktMjAweDIwMC5qcGc_p_p100_p_3D.jpg'},
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgxOTkyZmMxZjMxNjY1YmM2YjFhMzExNzBlNGVlNTgtMjAweDIwMC5qcGc_p_p100_p_3D.jpg'},
+									{name:"https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZmZiYzdlMDFhZGFjZjRhNWVmZWFlMTQ5N2Y2MGYyM2UtMjAweDIwMC5qcGc_p_p100_p_3D.jpg"},
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvM2Q2OWEyYjFlZWJjNWIxYjIxZWRiZTQ2ZGU1Mzg0ODktMjAweDIwMC5qcGc_p_p100_p_3D.jpg'},
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgxOTkyZmMxZjMxNjY1YmM2YjFhMzExNzBlNGVlNTgtMjAweDIwMC5qcGc_p_p100_p_3D.jpg'},
+									{name:"https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZmZiYzdlMDFhZGFjZjRhNWVmZWFlMTQ5N2Y2MGYyM2UtMjAweDIwMC5qcGc_p_p100_p_3D.jpg"},
+								]
+							}
+						}
+					},
+					foot:{
+						template: '#foot',
+					}
+				}
+			},
+			/* 路线 */
+			{
+				path: '/lx',
+				components: {
+					head: {
+						template: '#gy_head',
+						data(){
+							return{
+								title:'DESTINATION'
+							}
+						}
+					},
+					cont:{
+						template:'#lx_cont',
+						data(){
+							return{
+								o:[
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'织金大峡谷',xq:'Distance:8.5km　　Days:7',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。'},
+									{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'梵净山',xq:'Distance:4.3km　　Days:4',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'格凸河',xq:'Distance:3.5km　　Days:2',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYTMxY2EwYjEyY2ZhYTY0YTA3ZDZhNjVjMGIzYjc4NGYtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'玉龙沙湖',xq:'Distance:3.8km　　Days:2',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'乌兰布统草原',xq:'Distance:10.5km　　Days:8',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。'},
+					  				{name:'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItODAweDUwMC5qcGc_p_p100_p_3D.jpg',title:'青龙湖',xq:'Distance:6.5km　　Days:5',cont:'当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。'},
+								],
+							}
+						}
+					},
+					foot:{
+						template: '#foot',
+					}
+				}
+			},
+			/*  路线跳转 动态路由*/
+			{name:'products',path:'/products/:title/:cont/:name',components:{
+				head:{
+					template: '#gy_head',
+					data(){
+						return{
+							title:''	
+						}
+					},
+					created(){
+						this.title=this.$route.params.title
+						//	console.log(this.$route.params.name)
+					},
+					watch:{
+						'$route.params'(nnew,b){
+							this.title=nnew.title
+						}
+					},
+				},
+				cont:{
+					template:'#products',
+					data(){
+						return{
+							cont:'',
+							name:''
+						}
+					},
+					created(){
+						this.cont=this.$route.params.cont
+						this.name=this.$route.params.name
+					},
+					watch:{
+						'$route.params'(nnew,b){
+							console.log(nnew)
+							this.name=nnew.name
+							this.cont=nnew.cont
+						}
+					},
+				},
+				foot:{
+					template: '#foot',
+				}
+			}},
+			/* 攻略组件*/
+			{path:'/gl',components:{
+				head:{
+					template: '#gy_head',
+					data(){
+						return{
+							title:'TRAVEL GUIDE'
+							
+						}
+					}
+				},
+				cont:{
+					template: '#gyy_cont',
+				},
+				foot:{
+					template: '#foot',
+				}								
+			}},
+			/* 联系组件*/
+			{path:'/relation',components:{
+				head:{
+					template: '#gy_head',
+					data(){
+						return{
+							title:'CONTACT'
+							
+						}
+					}
+				},
+				cont:{
+					template:'#relation_cont'
+				},
+				foot:{
+					template: '#foot',
+				}
+			}},
+		]
+	})
+	var vm = new Vue({
+		el: "#box",
+		data: {
+			type:'false'
+		},
+		methods: {
+			//导航吸顶条
+			scr(){
+				var scrollTop=document.documentElement.scrollTop||document.body.scrollTop
+				var navHeight=document.getElementById('nav')
+				this.type = scrollTop > navHeight.offsetHeight+20 ? true : false;
+				if(this.type){
+					navHeight.style.position="fixed"
+					navHeight.style.background="rgba(55,156,244)"
+					navHeight.style.opacity="1"
+					navHeight.style.transition="0.3s"
+				}else{
+					navHeight.style.position="absolute"
+					navHeight.style.background=""
+					navHeight.style.transition="none"
+				}
+			}
+		},
+		mounted(){
+			addEventListener('scroll',this.scr)
+		},
+		router,
+
+	});
+	 var a=new Swiper ('#baner .swiper-container_z', {
+    loop: true, // 循环模式选项
+     autoplay :true,
+     slidesPerView : 2,
+     spaceBetween : 20,
+    // 如果需要分页器
+     speed:10,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // 如果需要滚动条
+  })
+	  var a=new Swiper ('#cont .swiper2', {
+    loop: true, // 循环模式选项
+     autoplay :true,
+     slidesPerView : 2,
+     spaceBetween : 20,
+    // 如果需要分页器
+     speed:100,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // 如果需要滚动条
+  })
+	var a=new Swiper ('#gy_cont .swiper3', {
+    loop: true, // 循环模式选项
+     autoplay :true,
+  })
+</script>
